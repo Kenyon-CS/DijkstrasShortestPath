@@ -23,7 +23,7 @@ void dijkstra(const vector<vector<int>>& graph, int src) {
     dist[src] = 0;
 
     // Priority queue to select the vertex with the minimum distance
-    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> pq;
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
     pq.push({0, src});  // Push the source with a distance of 0
 
     // While there are vertices in the priority queue
